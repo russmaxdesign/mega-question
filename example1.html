@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Mega-question: Example 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Mega-question: Example 1</h1>
+    <p><a href="https://github.com/russmaxdesign/mega-question">Github Page</a></p>
+
+    <form action="#">
+      <p id="q1">Does your house have any of the following problems?</p>
+      <fieldset class="form-fieldset">
+        <legend>Mould</legend>
+        <ul class="segmented-control segmented-control--stretched" role="presentation">
+          <li role="presentation">
+             <input type="radio" id="mould-yes" name="mould-options" aria-describedby="q1">
+             <label for="mould-yes">Yes</label>
+          </li>
+          <li role="presentation">
+             <input type="radio" id="mould-no" name="mould-options" aria-describedby="q1">
+             <label for="mould-no">No</label>
+          </li>
+          <li role="presentation">
+             <input type="radio" id="mould-maybe" name="mould-options" aria-describedby="q1">
+             <label for="mould-maybe">Maybe</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form-fieldset">
+        <legend>Damp rot</legend>
+        <ul class="segmented-control segmented-control--stretched" role="presentation">
+          <li role="presentation">
+             <input type="radio" id="damp-yes" name="damp-options" aria-describedby="q1">
+             <label for="damp-yes">Yes</label>
+          </li>
+          <li role="presentation">
+             <input type="radio" id="damp-no" name="damp-options" aria-describedby="q1">
+             <label for="damp-no">No</label>
+          </li>
+          <li role="presentation">
+             <input type="radio" id="damp-maybe" name="damp-options" aria-describedby="q1">
+             <label for="damp-maybe">Maybe</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form-fieldset">
+        <legend>Flooding</legend>
+        <ul class="segmented-control segmented-control--stretched" role="presentation">
+          <li role="presentation">
+             <input type="radio" id="flooding-yes" name="flooding-options" aria-describedby="q1">
+             <label for="flooding-yes">Yes</label>
+          </li>
+          <li role="presentation">
+             <input type="radio" id="flooding-no" name="flooding-options" aria-describedby="q1">
+             <label for="flooding-no">No</label>
+          </li>
+          <li role="presentation">
+             <input type="radio" id="flooding-maybe" name="flooding-options" aria-describedby="q1">
+             <label for="flooding-maybe">Maybe</label>
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+    <p><a href="#">Dummy link below example</a></p>
+
+    <h2>Code</h2>
+    <figure>
+      <figcaption class="markup-heading">Markup</figcaption>
+<pre><code class="language-markup">&lt;form action="#"&gt;
+  &lt;p id="q1"&gt;Does your house have any of the following problems?&lt;/p&gt;
+  &lt;fieldset class="form-fieldset"&gt;
+    &lt;legend&gt;Mould&lt;/legend&gt;
+    &lt;ul class="segmented-control segmented-control--stretched" role="presentation"&gt;
+      &lt;li role="presentation"&gt;
+         &lt;input type="radio" id="mould-yes" name="mould-options" aria-describedby="q1"&gt;
+         &lt;label for="mould-yes"&gt;Yes&lt;/label&gt;
+      &lt;/li&gt;
+      &lt;li role="presentation"&gt;
+         &lt;input type="radio" id="mould-no" name="mould-options" aria-describedby="q1"&gt;
+         &lt;label for="mould-no"&gt;No&lt;/label&gt;
+      &lt;/li&gt;
+      &lt;li role="presentation"&gt;
+         &lt;input type="radio" id="mould-maybe" name="mould-options" aria-describedby="q1"&gt;
+         &lt;label for="mould-maybe"&gt;Maybe&lt;/label&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/fieldset&gt;
+  &lt;fieldset class="form-fieldset"&gt;
+    &lt;legend&gt;Damp rot&lt;/legend&gt;
+    &lt;ul class="segmented-control segmented-control--stretched" role="presentation"&gt;
+      &lt;li role="presentation"&gt;
+         &lt;input type="radio" id="damp-yes" name="damp-options" aria-describedby="q1"&gt;
+         &lt;label for="damp-yes"&gt;Yes&lt;/label&gt;
+      &lt;/li&gt;
+      &lt;li role="presentation"&gt;
+         &lt;input type="radio" id="damp-no" name="damp-options" aria-describedby="q1"&gt;
+         &lt;label for="damp-no"&gt;No&lt;/label&gt;
+      &lt;/li&gt;
+      &lt;li role="presentation"&gt;
+         &lt;input type="radio" id="damp-maybe" name="damp-options" aria-describedby="q1"&gt;
+         &lt;label for="damp-maybe"&gt;Maybe&lt;/label&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/fieldset&gt;
+  &lt;fieldset class="form-fieldset"&gt;
+    &lt;legend&gt;Flooding&lt;/legend&gt;
+    &lt;ul class="segmented-control segmented-control--stretched" role="presentation"&gt;
+      &lt;li role="presentation"&gt;
+         &lt;input type="radio" id="flooding-yes" name="flooding-options" aria-describedby="q1"&gt;
+         &lt;label for="flooding-yes"&gt;Yes&lt;/label&gt;
+      &lt;/li&gt;
+      &lt;li role="presentation"&gt;
+         &lt;input type="radio" id="flooding-no" name="flooding-options" aria-describedby="q1"&gt;
+         &lt;label for="flooding-no"&gt;No&lt;/label&gt;
+      &lt;/li&gt;
+      &lt;li role="presentation"&gt;
+         &lt;input type="radio" id="flooding-maybe" name="flooding-options" aria-describedby="q1"&gt;
+         &lt;label for="flooding-maybe"&gt;Maybe&lt;/label&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;
+</code></pre>
+    </figure>
+
+    <p><a href="https://github.com/russmaxdesign/mega-question">Github Page</a></p>
+  </div>
+
+<script src="assets/js/prism.js"></script>
+</body>
+</html>

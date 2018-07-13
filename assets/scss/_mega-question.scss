@@ -1,0 +1,29 @@
+.form-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.form-fieldset {
+  border: 0;
+  margin: 0 0 1em;
+  padding: 0;
+}
+
+.form-fieldset legend {
+  position: relative;
+  left: -2px;
+  display: block;
+  margin: 0 0 .3em;
+  font-weight: bold;
+}
+
+.pass {
+  color: green;
+  font-weight: bold;
+}
+
+.fail {
+  color: red;
+  font-weight: bold;
+}

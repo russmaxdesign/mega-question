@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Mega-question</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Mega-question</h1>
+    <p><a href="https://github.com/russmaxdesign/mega-question">Github Page</a></p>
+    <p>Within a form, can an overall question be programmatically associated with a series of form controls and their labels below? These test pages demonstrate three different methods.</p>
+    <ul>
+      <li><a href="example1.html">Example 1: Using aria-describedby</a></li>
+      <li><a href="example2.html">Example 2: Using nested fieldsets</a></li>
+      <li><a href="example3.html">Example 3: Using multiple instances of aria-describedby</a></li>
+    </ul>
+
+    <h2>Results</h2>
+    <p>A pass is defined as a radio button that is announced with:</p>
+    <ol>
+      <li>The form control label: <em>"Yes"</em></li>
+      <li>The parent legend: <em>"Mould"</em></li>
+      <li>The overall question: <em>"Does your house have any of the following problems"</em></li>
+    </ol>
+
+    <h3>Windows/NVDA/Chrome 67</h3>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 20%;">Example</th>
+          <th>Announced</th>
+          <th>Results</th>
+        </tr>
+      </thead>
+      <tr>
+        <td>Example 1</td>
+        <td><em>"Mould grouping. Yes. Radio button. Not checked. Does your house have any of the following problems. 1 of 3."</em></td>
+        <td><span class="pass">PASS</span></td>
+      </tr>
+      <tr>
+        <td>Example 2</td>
+        <td><em>"Does your house have any of the following problems. Grouping. Mould grouping. Yes. Radio button. Not checked. 1 of 3."</em></td>
+        <td><span class="pass">PASS</span></td>
+      </tr>
+      <tr>
+        <td>Example 3</td>
+        <td><em>"Mould grouping. Yes. Radio button. Not checked. Does your house have any of the following problems. Mould. 1 of 3."</em></td>
+        <td><span class="pass">PASS</span></td>
+      </tr>
+    </table>
+
+    <h3>Windows/JAWS/Chrome 67</h3>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 20%;">Example</th>
+          <th>Announced</th>
+          <th>Results</th>
+        </tr>
+      </thead>
+      <tr>
+        <td>Example 1</td>
+        <td><em>"Mould. Yes. Radio button. Not checked. 1 of 3. Does your house have any of the following problems."</em></td>
+        <td><span class="pass">PASS</span></td>
+      </tr>
+      <tr>
+        <td>Example 2</td>
+        <td><em>"Does your house have any of the following problems. Mould. Yes. Radio button. Not checked. 1 of 3."</em></td>
+        <td><span class="pass">PASS</span></td>
+      </tr>
+      <tr>
+        <td>Example 3</td>
+        <td><em>"Mould. Yes. Radio button. Not checked. 1 of 3. Does your house have any of the following problems. Mould."</em></td>
+        <td><span class="pass">PASS</span></td>
+      </tr>
+    </table>
+
+    <h3>Windows/NVDA/Firefox 61</h3>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 20%;">Example</th>
+          <th>Announced</th>
+          <th>Results</th>
+        </tr>
+      </thead>
+      <tr>
+        <td>Example 1</td>
+        <td><em>"Mould grouping. Yes. Radio button. Not checked. Does your house have any of the following problems. 1 of 3."</em></td>
+        <td><span class="pass">PASS</span></td>
+      </tr>
+      <tr>
+        <td>Example 2</td>
+        <td><em>"Does your house have any of the following problems. Grouping. Mould grouping. Yes. Radio button. Not checked. 1 of 3."</em></td>
+        <td><span class="pass">PASS</span></td>
+      </tr>
+      <tr>
+        <td>Example 3</td>
+        <td><em>"Mould grouping. Yes. Radio button. Not checked. Does your house have any of the following problems. Mould. 1 of 3."</em></td>
+        <td><span class="pass">PASS</span></td>
+      </tr>
+    </table>
+
+    <h3>Windows/JAWS/Firefox 61</h3>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 20%;">Example</th>
+          <th>Announced</th>
+          <th>Results</th>
+        </tr>
+      </thead>
+      <tr>
+        <td>Example 1</td>
+        <td><em>"Mould. Yes. Radio button. Not checked. 1 of 3. Does your house have any of the following problems."</em></td>
+        <td><span class="pass">PASS</span></td>
+      </tr>
+      <tr>
+        <td>Example 2</td>
+        <td><em>"Does your house have any of the following problems. Mould. Yes. Radio button. Not checked. 1 of 3."</em></td>
+        <td><span class="pass">PASS</span></td>
+      </tr>
+      <tr>
+        <td>Example 3</td>
+        <td><em>"Mould. Yes. Radio button. Not checked. 1 of 3. Does your house have any of the following problems. Mould."</em></td>
+        <td><span class="pass">PASS</span></td>
+      </tr>
+    </table>
+
+    <h3>Windows/NVDA/Edge 42</h3>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 20%;">Example</th>
+          <th>Announced</th>
+          <th>Results</th>
+        </tr>
+      </thead>
+      <tr>
+        <td>Example 1</td>
+        <td><em>"Yes. Radio button. Not checked. Does your house have any of the following problems. 1 of 3."</em></td>
+        <td><span class="fail">FAIL</span></td>
+      </tr>
+      <tr>
+        <td>Example 2</td>
+        <td><em>"Yes. Radio button. Not checked. 1 of 3."</em></td>
+        <td><span class="fail">FAIL</span></td>
+      </tr>
+      <tr>
+        <td>Example 3</td>
+        <td><em>"Yes. Radio button. Not checked. Does your house have any of the following problems. Mould. 1 of 3."</em></td>
+        <td><span class="pass">PASS</span></td>
+      </tr>
+    </table>
+
+    <h3>Windows/JAWS/Edge 42</h3>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 20%;">Example</th>
+          <th>Announced</th>
+          <th>Results</th>
+        </tr>
+      </thead>
+      <tr>
+        <td>Example 1</td>
+        <td><em>"Yes. Radio button. Not checked. 1 of 3."</em></td>
+        <td><span class="fail">FAIL</span></td>
+      </tr>
+      <tr>
+        <td>Example 2</td>
+        <td><em>"Yes. Radio button. Not checked. 1 of 3."</em></td>
+        <td><span class="fail">FAIL</span></td>
+      </tr>
+      <tr>
+        <td>Example 3</td>
+        <td><em>"Yes. Radio button. Not checked. 1 of 3."</em></td>
+        <td><span class="fail">FAIL</span></td>
+      </tr>
+    </table>
+
+    <h3>OSX/Voiceover/Chrome</h3>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 20%;">Example</th>
+          <th>Announced</th>
+          <th>Results</th>
+        </tr>
+      </thead>
+      <tr>
+        <td>Example 1</td>
+        <td><em>"Yes. Radio button. One of three. Does your house have any of the following problems."</em></td>
+        <td><span class="fail">FAIL</span></td>
+      </tr>
+      <tr>
+        <td>Example 2</td>
+        <td><em>"Yes. Radio button. One of three."</em></td>
+        <td><span class="fail">FAIL</span></td>
+      </tr>
+      <tr>
+        <td>Example 3</td>
+        <td><em>"Yes. Radio button. One of three. Does your house have any of the following problems. Mould."</em></td>
+        <td><span class="pass">PASS</span></td>
+      </tr>
+    </table>
+
+    <p><a href="https://github.com/russmaxdesign/mega-question">Github Page</a></p>
+  </div>
+
+<script src="assets/js/prism.js"></script>
+</body>
+</html>
